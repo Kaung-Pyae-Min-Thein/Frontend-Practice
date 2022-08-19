@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;  // font-size: 10px;
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+  ::selection{
+    color: #fff;
+    background-color: $primary-color;
+  }
+

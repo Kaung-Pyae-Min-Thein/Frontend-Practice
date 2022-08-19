@@ -1,0 +1,30 @@
+@use "sass:map";
+
+.rte
+{
+  width: 50vw;
+  margin: 115px auto;
+  @media screen and (max-width: 1024px){
+    width: initial;
+  }
+  
+  h1,h2,h3,h4,h5,h6,p{
+    color: $text-blk;
+    line-height: 1.8;
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-weight: map.get($font-weight,"bold");
+    margin-bottom: 20px;
+  }
+  h1{
+    font-size: $fs-h;
+  }
+  p{
+    font-size: $fs-p;
+    font-weight: map.get($font-weight,"light");
+  }
+  a{
+    color:  $primary-color;
+    text-decoration: none;
+  }
+}

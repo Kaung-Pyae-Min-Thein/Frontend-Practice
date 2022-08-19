@@ -1,0 +1,10 @@
+.video{
+  margin: 0 auto;
+  width: 50vw;
+  iframe{
+    width: 100%;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 100vw;
+  }
+}

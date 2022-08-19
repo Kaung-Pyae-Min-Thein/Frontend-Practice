@@ -1,0 +1,85 @@
+mixin footer 
+  footer.container
+    img.logo(src=img+"ableton-wordmark.svg")
+    section.main
+      .socials 
+        ul 
+          li 
+            a(href="#") Register Live or Push >
+          li 
+            a(href="#") About Ableton >
+          li 
+            a(href="#") Jobs >
+          li 
+            a(href="#")
+              img(src=img+"bxl-facebook-square.svg", alt="facebook")
+            a(href="#")
+              img(src=img+"bxl-twitter.svg", alt="twitter")
+            a(href="#")
+              img(src=img+"bxl-youtube.svg", alt="youtube")
+            a(href="#")
+              img(src=img+"bxl-instagram-alt.svg", alt="insta")               
+
+      .education 
+        h1 Education
+        ul 
+          li 
+            a(href="#") Offers for students and teachers  >
+          li 
+            a(href="#") Ableton for the Classroom  >
+          li 
+            a(href="#") Ableton for Colleges and Universities  >
+          
+      .newsletter 
+        h1 Sign up to our newsletter
+        
+        p Enter your email address to stay up to date with the latest offers tutorials, downloads and more. 
+        form(action="#")
+          input(type="email",placeholder="Email Address")
+          button(type="submit") Sign up
+     
+      .community 
+        h1 Community 
+        ul 
+          li 
+            a(href="#") Find Ablton User Groups 
+          li 
+            a(href="#") Find Certified Training
+          li 
+            a(href="#") Become a Certified Trainer
+      .distributors 
+        h1 Distributors 
+        ul 
+          li 
+            a(href="#") Find Distributors 
+          li 
+            a(href="#") Try Push in-store 
+      .language
+        h1 Language and Location
+        div
+          form(action="#",method="post")  
+            select(name="language")
+              option(value="en", selected) English
+              option(value="de") Deutsch 
+              option(value="fr") Franch 
+          form(action="#", method="post")
+            select(name="location")
+              option Please Choose
+              option Singapore  
+
+    section.last 
+      ul
+        li 
+          a(href="#") Contact Us 
+        li 
+          a(href="#") Press Resources
+        li 
+          a(href="#") Legal Info 
+        li 
+          a(href="#") Privacy Policy 
+        li 
+          a(href="#") Cookie Settings 
+        li 
+          a(href="#") Imprint 
+        li.berlin Made in Berlin 
+          img(src=img+"ableton-hallmark.svg", alt="")

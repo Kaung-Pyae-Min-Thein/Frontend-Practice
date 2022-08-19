@@ -1,0 +1,29 @@
+{
+  "name": "ableton-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass-prod": "sass --no-source-map --style=compressed ./src/scss:./public/css",
+    "copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
+    "copy": "npm-run-all --parallel copy:*",
+    "watch:assets": "onchange \"./src/assets/**/*\" -- npm run copy:assets",
+    "watch:sass": "sass --watch --update --style=expanded ./src/scss:./public/css",
+    "watch:pug": "pug --watch ./src/views/pages --pretty --out ./public",
+    "watch": "npm-run-all --parallel watch:*",
+    "serve": "browser-sync start --server public --files public",
+    "start": "npm-run-all copy --parallel watch serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "copyfiles": "^2.4.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "pug": "^3.0.2",
+    "sass": "^1.54.4"
+  },
+  "dependencies": {},
+  "description": ""
+}

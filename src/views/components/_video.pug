@@ -1,0 +1,5 @@
+mixin video(link, caption)
+  .container
+    .video 
+      iframe(src=link,height="315", title="YouTube video player", frameborder="0",allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+      p= caption

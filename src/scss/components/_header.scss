@@ -1,0 +1,53 @@
+@use "sass:map";
+
+header{
+  width: 100%;
+  ul{
+    display: flex;
+    align-items: center;
+    li{
+      &:not(:last-child){
+        padding-right: 20px;
+        @media (min-width: 1024px) {
+          margin-right: 5px;
+        }
+      }
+      a, a:hover, a:visited{
+        font-weight: map.get($font-weight, "bold");
+        text-decoration: none;
+        color: $text-blk;      
+      }
+           
+    } 
+    }
+  div{
+      display: flex;
+      align-items: center;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+      .logo{
+        margin-right: 3%;
+        img{
+          width: 60px;
+          height: 28px;
+        }
+      }
+      ul{
+        font-size: $fs-m;
+        .try{
+          a{
+            color: $primary-color;
+          }
+        }
+        .account{
+          a{
+            font-size: $fs-sm;
+          }
+        }
+      }
+    }
+  nav{
+    font-size: $fs-sm;
+    position: sticky;
+    top: 0;
+    }
+}

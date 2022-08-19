@@ -1,0 +1,85 @@
+body {
+  font-family: "Public Sans", sans-serif;
+}
+body ::-moz-selection {
+  color: #fff;
+  background-color: #0000ff;
+}
+body ::selection {
+  color: #fff;
+  background-color: #0000ff;
+}
+
+.rte {
+  width: 50vw;
+  margin: 2rem auto;
+}
+.rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6, .rte p {
+  color: #000000;
+  line-height: 1.5;
+}
+.rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6 {
+  font-weight: 500;
+}
+.rte h1 {
+  font-size: 30px;
+}
+.rte p {
+  font-size: 20px;
+  font-weight: 200;
+}
+.rte a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+header ul li:not(:last-child) {
+  padding-right: 20px;
+}
+@media (min-width: 1024px) {
+  header ul li:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+header ul li a, header ul li a:hover, header ul li a:visited {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+}
+header div {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+}
+header div .logo {
+  margin-right: 3%;
+}
+header div .logo img {
+  width: 60px;
+  height: 28px;
+}
+header div ul {
+  font-size: 20px;
+}
+header div ul .try a {
+  color: #0000ff;
+}
+header div ul .account a {
+  font-size: 16px;
+}
+header nav {
+  font-size: 16px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}/*# sourceMappingURL=index.css.map */

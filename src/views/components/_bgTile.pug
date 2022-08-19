@@ -1,0 +1,18 @@
+mixin bgTile(position,color, photos)
+  .tile(class=position) 
+    div(class="bg-tile"+"-"+color)
+    -for(var x=0; x<photos.length;x++)
+      img.img-fluid(src=img+ photos[x], alt=x+1)
+
+mixin imageText(photo, text, info)
+  .container 
+    .imgtxt
+      img.img-fluid(src=img+photo, alt="img")
+      .text-box
+        div 
+          p= text
+          a(href=info.link)= info.txt 
+
+
+
+//- +bgTile("left", "yellow")
