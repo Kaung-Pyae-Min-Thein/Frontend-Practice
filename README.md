@@ -1,11 +1,11 @@
-#How to Run the Project
+# How to Run the Project
 
-###First install node packages
+### First install node packages
 ```
 npm install
 ```
 
-###To run pj automitically
+### To run pj automitically
 ```
 npm start
 ```
